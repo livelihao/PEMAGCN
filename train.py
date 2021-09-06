@@ -4,7 +4,7 @@ import torch.nn as nn
 import argparse
 from sklearn import metrics
 from torch.utils.data import DataLoader
-from models import LSTM, AE_LSTM, ATAE_LSTM, PBAN, TextCNN, GCAE, KimCNN, PGCAE
+from models import PGCAE
 from data_utils import SentenceDataset, build_tokenizer, build_embedding_matrix
 import numpy as np
 
@@ -172,14 +172,8 @@ class Instructor:
 def main():
     
     model_classes = {
-        'lstm': LSTM,
-        'ae_lstm': AE_LSTM,
-        'atae_lstm': ATAE_LSTM,
-        'pban': PBAN,
-        'tcnn': TextCNN,
-        'gcae':GCAE,
-        'pgcae':PGCAE,
-        'kcnn':KimCNN
+        
+        'pgcae':PGCAE
     }
     
     dataset_files = {
@@ -222,7 +216,7 @@ def main():
     
     # Hyperparameters
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_name', default='pban', type=str, help=', '.join(model_classes.keys()))
+    parser.add_argument('--model_name', default='pgcae', type=str, help=', '.join(model_classes.keys()))
     parser.add_argument('--dataset', default='restaurant', type=str, help=', '.join(dataset_files.keys()))
     parser.add_argument('--optimizer', default='adam', type=str, help=', '.join(optimizers.keys()))
     parser.add_argument('--initializer', default='xavier_uniform_', type=str, help=', '.join(initializers.keys()))

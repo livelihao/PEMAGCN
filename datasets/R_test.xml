@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sentences>
+    <sentence id="425">
+        <text>The price is reasonable although the service is poor.</text>
+        <aspectTerms>
+            <aspectTerm term="price" polarity="positive" from="4" to="9"/>
+            <aspectTerm term="service" polarity="negative" from="37" to="44"/>
+        </aspectTerms>
+        <aspectCategories>
+            <aspectCategory category="service" polarity="negative"/>
+            <aspectCategory category="price" polarity="positive"/>
+        </aspectCategories>
+    </sentence>
+    <sentence id="1458">
+        <text>Our agreed favorite is the orrechiete with sausage and chicken (usually the waiters are kind enough to split the dish in half so you get to sample both meats).</text>
+        <aspectTerms>
+            <aspectTerm term="orrechiete with sausage and chicken" polarity="positive" from="27" to="62"/>
+        </aspectTerms>
+    </sentence>
+    <sentence id="1634">
+        <text>The food is uniformly exceptional, with a very capable kitchen which will proudly whip up whatever you feel like eating, whether it's on the menu or not.</text>
+        <aspectTerms>
+            <aspectTerm term="food" polarity="positive" from="4" to="8"/>
+            <aspectTerm term="kitchen" polarity="positive" from="55" to="62"/>
+            <aspectTerm term="menu" polarity="neutral" from="141" to="145"/>
+        </aspectTerms>
+        <aspectCategories>
+            <aspectCategory category="food" polarity="positive"/>
+        </aspectCategories>
+    </sentence>
+</sentences>
